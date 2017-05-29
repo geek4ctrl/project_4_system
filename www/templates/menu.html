@@ -1,0 +1,71 @@
+<ion-side-menus ng-controller="menuCtrl" style="">
+
+<ion-side-menu-content>
+
+<!--     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+  <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+</ion-nav-bar> -->
+<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+</ion-side-menu-content>
+
+<ion-side-menu side="left">
+<header style="background-color: #212121" class="bar bar-header bar-stable">
+
+  <h1 class="title" style="color: white">Menu</h1>
+</header>
+
+<ion-content class="has-header" ng-init="init()">
+
+ <ion-list>
+ <div style="background-color: red; margin-top: -3%">
+    <img id="profilePicMenu" ng-src="http://products.thedigitalacademy.co.za/March2017/afripay/{{pictureUrl}}" onerror="this.src='http://halbadarpan.com/vivaah/images/thumb/not-available.jpg'" style="border-radius: 50%; height: 30%; width: 30%; margin-top: 10%; margin-left: 25%" />
+
+              <!-- <p style="margin-left: 28%; font-weight: bold; color: white">{{name}} {{surname}}</p> -->
+                <p style="margin-left: 28%; font-weight: bold; color: white">Laurent Mbuyu</p>
+              <p style="margin-left: 28%; font-weight: bold; color: white">laurent.mb19@gmail.com</p>
+              <br>
+              <br>
+
+  </div>
+
+  <!-- <div ng-controller="logoutCtrl"> -->
+    <div>
+
+    <ion-item class="item-content" nav-clear menu-close href="#/app/profile" style="font-weight: bold; color: #4dbcd3;">
+          News Feed
+    </ion-item>
+
+    <ion-item class="item-content" nav-clear menu-close href="#/app/profile" style="font-weight: bold; color: #4dbcd3;">
+        Favourites
+    </ion-item>
+
+    <ion-item class="item-content" nav-clear menu-close href="#/app/profile" style="font-weight: bold; color: #4dbcd3;">
+      Friends
+    </ion-item>
+
+    <ion-item nav-clear menu-close href="#/app/sellingproducts" style="font-weight: bold; color: #4dbcd3">
+      Help Center
+    </ion-item>
+
+<!--         <ion-item nav-clear menu-close href="#/app/moneytransfer" style="font-weight: bold; color: #4dbcd3">
+      Add payment details
+    </ion-item> -->
+
+    <ion-item nav-clear menu-close href="#/app/transactions" style="font-weight: bold; color: #4dbcd3">
+      Privacy Settings
+    </ion-item>
+
+    <ion-item nav-clear menu-close href="#/app/moneytransfer" style="font-weight: bold; color: #4dbcd3">
+      Terms & Policies
+    </ion-item>
+
+     <ion-item nav-clear menu-close ng-click="userLogout()" style="margin-top: 0%; font-weight: bold; color: #4dbcd3; background-color: #212121">Logout</ion-item>
+
+  </div>
+
+  </ion-list>
+
+</ion-content>
+</ion-side-menu>
+</ion-side-menus>

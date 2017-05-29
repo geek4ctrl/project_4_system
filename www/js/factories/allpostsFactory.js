@@ -1,0 +1,7 @@
+app.factory('allpostsFactory', function(){
+
+
+
+
+
+});

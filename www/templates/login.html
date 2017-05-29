@@ -1,0 +1,38 @@
+<ion-view>
+
+  <ion-content>
+
+        <!-- App logo -->
+        <img style=" margin-left: 16%; margin-top: 5%; width: 250px; height: 250px" src="https://storage.designcrowd.com/design_img/1192395/83087/83087_6266355_1192395_97a4693b_image.jpg">
+
+        <!-- App username -->
+        <label class="item item-input" style="margin-top: 0%; margin-left: 10%; border-width: 1px; border-style: solid; border-color: #4dbcd3; margin-right:40px; border-top: none; border-left: none; border-right: none">
+
+          <!-- <img style="width:15px; height: 15px" src="img/mail.svg"/> -->
+          <input type="text" ng-model="email" placeholder="Email" style="margin-left: 3%; margin-top: 0%; width: 95%; width: 40%; border-color: #4dbcd3; color: #4dbcd3; "/>
+
+        </label>
+
+        <!-- App password -->
+        <label class="item item-input" style="margin-top: 5%; border: none; margin-left: 10%; border-width: 1px; border-style: solid; border-color: #4dbcd3; margin-right:40px; border-top: none; border-left: none; border-right: none">
+
+          <!-- <img style="width:15px; height: 15px" src="img/key.svg"/> -->
+          <input type="password" ng-model="password" placeholder="Password" style="margin-left: 3%; margin-top: -1%; width: 95%; border-top: none; border-left: none; border-right: none; color: #4dbcd3" />
+
+        </label>
+
+        <!-- App login -->
+        <a href="#/app/allposts"><button style="border: 0.5px; padding: 10px; margin-left: 10%; width: 79%; margin-top: 10%; color: #ffa834; background-color: #4dbcd3; color: white; border-radius: 20px">Sign In</button></a>
+
+        <!-- App register -->
+        <button style="border: 0.5px; padding: 10px; margin-left: 10%; width: 34%; margin-top: 10%; color: #ffa834; background-color: grey; color: white; border-radius: 20px" check-form ng-click="loginUser(email, password)">Register</button>
+
+        <!-- App take a tour -->
+        <button style="border: 0.5px; padding: 10px; margin-left: 10%; width: 34%; margin-top: 10%; color: #ffa834; background-color: grey; color: white; border-radius: 20px" check-form ng-click="loginUser(email, password)">Take a tour</button>
+
+        <p style="margin-top: 5%; margin-left: 33%">Forgot password</p>
+
+
+  </ion-content>
+
+</ion-view>
